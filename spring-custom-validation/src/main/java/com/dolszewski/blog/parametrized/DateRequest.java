@@ -12,7 +12,7 @@ public class DateRequest {
     @DaysOfWeek(days = {MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY})
     private LocalDate workingDay;
 
-    public DateRequest(LocalDate weekendDay, LocalDate workingDay) {
+    public DateRequest( LocalDate weekendDay, LocalDate workingDay) {
         Objects.requireNonNull(weekendDay);
         Objects.requireNonNull(workingDay);
         this.weekendDay = weekendDay;
